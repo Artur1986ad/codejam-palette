@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="clean_style.css">     
+    <title>CodeJam Canvas</title>
+</head>
+<body>
+    <header class="header">
+        <a class="header__menu" href="#">
+            <span class="header__menu_item">Menu</span>                
+        </a>
+        <h1 class="header__title">CodeJam - Pallete</h1>         
+        <a class="header__extra-options" href="#">
+            <span class="header__extra-options_item">Extra options</span>
+        </a>
+    </header>
+    <main class="main-content">
+        <div class="tool switcher">
+            <li id="paint_bucket" class="tool-item paint_bucket"><img class="tool_image" src="assets/icon-share-1.svg">Paint bucket</li>
+            <li id="choose_color" class="tool-item choose_color"><img class="tool_image" src="assets/icon-upload.svg">Choose color</li>
+            <li id="pencil" class="tool-item pencil"><img class="tool_image" src="assets/pencil.svg">Pencil</li>
+            <li id="transform" class="tool-item tool_item-transform"><img class="tool_image" src="assets/icon-share.svg">Transform</li>
+        </div>        
+        <div class="color switcher">
+            <div class="color-item color_backgr-input">
+                 <input id="input_color" type="color" value="#008000">
+                 <label for="input_color">Current colors</label>
+            </div>
+            <div class="color-item color_backgr-prev" id="color_backgr-prev">
+                <div id="color_pref"></div>
+                <div id="color-pref_text">Prev color</div>
+            </div>
+            <div class="color-item color_backgr-red">
+                <div id="color_red"></div>
+                <div id="color-red_text">Red</div>
+            </div>
+            <div  class="color-item color_backgr-bleu">
+                <div id="color_bleu"></div>
+                <div id="color-bleu_text">Blue</div>
+            </div>
+        </div>
+        <canvas id="canvas" width="512" height="512"></canvas>   
+    </main>    
+    <script type="text/javascript" src="index.js"></script>       
+</body>
+</html>
+
+
+
